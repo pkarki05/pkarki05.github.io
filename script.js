@@ -28,8 +28,7 @@ cf.reset();
 fh.innerHTML='Form cleared. Your email app should have opened with your message. Nothing happened? <a href="'+gm+'" target="_blank" rel="noopener">Send with Gmail instead</a>.'});
 /* copy email */
 var cb=$("#copy"),timer;
-function done(ok){cb.textContent=ok?"Copied!":"Press Ctrl+C";cb.classList.toggle("done",ok);clearTimeout(timer);timer=setTimeout(function(){cb.textContent="Copy email";cb.classList.remove("done")},2000)}
-cb.addEventListener("click",function(){
+function done(ok){cb.textContent=ok?"Copied!":"Press Ctrl+C";cb.classList.toggle("done",ok);var t=$("#toast");t.textContent=ok?"Email copied. Ready to paste.":"Copy failed. Select the email and press Ctrl+C.";t.classList.add("show");clearTimeout(timer);timer=setTimeout(function(){cb.textContent="Copy email";cb.classList.remove("done");t.classList.remove("show")},2500)}cb.addEventListener("click",function(){
 function fb(){try{var t=document.createElement("textarea");t.value=EMAIL;t.style.position="fixed";t.style.opacity="0";document.body.appendChild(t);t.select();var ok=document.execCommand("copy");document.body.removeChild(t);done(ok)}catch(e){done(false)}}
 try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(EMAIL).then(function(){done(true)},fb)}else fb()}catch(e){fb()}});
 /* nav active link */
