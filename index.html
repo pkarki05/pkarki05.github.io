@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prakash Karki – Cybersecurity Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="#top">Prakash Karki</a>
+<nav aria-label="Primary"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a><button id="theme" aria-label="Toggle light or dark theme">◐</button></nav>
+</div></header>
+
+<main id="top">
+<div class="wrap">
+<div class="hero">
+<button class="badge mono" id="status" aria-pressed="true" title="Click to toggle"><span class="dot"></span><span id="stxt">Available for work</span></button>
+<h1>Cybersecurity analyst, <em>learning</em> out loud.</h1>
+<p class="sub">I'm training in network security, SIEM and Linux, and documenting each lab as I go. Currently preparing for CompTIA Security+ and looking for my first SOC or analyst role.</p>
+<div class="row"><a class="btn" href="#projects">View my labs</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+</div>
+</div>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<div class="about">
+<div>
+<p>I'm an IT professional moving into cybersecurity. I'm completing a <b>Master of Information Technology (Network Security)</b> at Charles Sturt University in Australia, based in Canberra.</p>
+<p>My approach: <b>build it, break it, write it up.</b> I'd rather understand why a log line matters than memorise a tool's menu, so I run labs in virtual machines and keep notes anyone can follow.</p>
+<p>I also have a front-end background in HTML, CSS, JavaScript and Bootstrap, which helps me communicate findings clearly.</p>
+</div>
+<div class="stats">
+<div class="stat"><b>30</b><span>public repositories</span></div>
+<div class="stat"><b>3</b><span>security lab series</span></div>
+<div class="stat"><b>M.IT</b><span>Network Security, in progress</span></div>
+<div class="stat"><b>Sec+</b><span>CompTIA, preparing</span></div>
+</div>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills &amp; stack</h2>
+<div class="skills">
+<div><h3>SECURITY</h3><div class="tags"><span class="tag">SIEM</span><span class="tag">Log analysis</span><span class="tag">Security monitoring</span><span class="tag">Incident response</span></div></div>
+<div><h3>PLATFORMS &amp; TOOLS</h3><div class="tags"><span class="tag">Linux</span><span class="tag">Splunk</span><span class="tag">Virtualization</span><span class="tag">Git</span></div></div>
+<div><h3>NETWORKING</h3><div class="tags"><span class="tag">Network security</span><span class="tag">Troubleshooting</span></div></div>
+<div><h3>FRONT-END</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">Angular</span><span class="tag">Bootstrap</span><span class="tag">Tailwind</span></div></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Security projects</h2>
+<div class="filters" role="group" aria-label="Filter projects">
+<button class="f" data-f="all" aria-pressed="true">All</button>
+<button class="f" data-f="siem" aria-pressed="false">SIEM</button>
+<button class="f" data-f="linux" aria-pressed="false">Linux</button>
+<button class="f" data-f="network" aria-pressed="false">Networking</button>
+</div>
+<div class="cards" id="cards">
+<article class="card" data-c="siem">
+<h3>Splunk SIEM Lab</h3>
+<p>Exploring log collection, searches, monitoring and security investigations in Splunk.</p>
+<div class="tags"><span class="tag">Splunk</span><span class="tag">SIEM</span><span class="tag">Log analysis</span></div>
+<div class="links"><a href="https://github.com/pkarki05" target="_blank" rel="noopener">GitHub</a><span class="soon">Case study soon</span></div>
+</article>
+<article class="card" data-c="linux">
+<h3>Linux Security Lab</h3>
+<p>Practical Linux administration and security exercises covering permissions, users and services.</p>
+<div class="tags"><span class="tag">Linux</span><span class="tag">Permissions</span><span class="tag">Services</span></div>
+<div class="links"><a href="https://github.com/pkarki05" target="_blank" rel="noopener">GitHub</a><span class="soon">Case study soon</span></div>
+</article>
+<article class="card" data-c="network linux">
+<h3>Cybersecurity Labs</h3>
+<p>Hands-on experiments, security configurations and practical labs in virtual environments.</p>
+<div class="tags"><span class="tag">Networking</span><span class="tag">Virtualization</span><span class="tag">Linux</span></div>
+<div class="links"><a href="https://github.com/pkarki05" target="_blank" rel="noopener">GitHub</a><span class="soon">Case study soon</span></div>
+</article>
+</div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Let's talk about a<br>SOC or analyst role.</h2>
+<form class="form" id="cf" novalidate>
+<div class="two">
+<div class="fld"><label for="em">Your email</label><input id="em" type="email" required autocomplete="email" placeholder="you@company.com"></div>
+<div class="fld"><label for="ph">Phone number</label><input id="ph" type="tel" required autocomplete="tel" placeholder="+61 400 000 000"></div>
+</div>
+<div class="fld"><label for="ms">Message</label><textarea id="ms" required placeholder="Tell me about the role or project"></textarea></div>
+<div class="row"><button class="btn" type="submit">Send message</button></div>
+<p class="hint" id="fh" role="status" aria-live="polite">Opens your email app with the message ready to send to Prakash.</p>
+</form>
+<div class="mail"><a id="mailto" href="mailto:karkiprakash049@gmail.com">karkiprakash049@gmail.com</a><button class="copy" id="copy">Copy email</button></div>
+<ul class="soc">
+<li><a href="https://github.com/pkarki05" target="_blank" rel="noopener">GitHub · pkarki05</a></li>
+<li><a href="https://www.linkedin.com/in/prakash-karki09/" target="_blank" rel="noopener">LinkedIn · prakash-karki09</a></li>
+<li><a href="https://x.com/your_handle" target="_blank" rel="noopener">X · @your_handle</a></li>
+</ul>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Prakash Karki · Canberra, Australia</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
